@@ -27,6 +27,19 @@ void compararCartas(
     printf("Densidade Populacional: Carta %d venceu (%d)\n", ((pop1 / area1) < (pop2 / area2)) ? 1 : 2, ((pop1 / area1) < (pop2 / area2)) ? 1 : 0);
     printf("PIB per Capita: Carta %d venceu (%d)\n", ((pib1 * 1000000000 / pop1) > (pib2 * 1000000000 / pop2)) ? 1 : 2, ((pib1 * 1000000000 / pop1) > (pib2 * 1000000000 / pop2)) ? 1 : 0);
     printf("Super Poder: Carta %d venceu (%d)\n", (superPoder1 > superPoder2) ? 1 : 2, (superPoder1 > superPoder2) ? 1 : 0);
+
+    printf("\n");
+    printf("Resumo do Super Poder:\n");
+    printf("Carta 1 - Super Poder: %.2f\n", superPoder1);
+    printf("Carta 2 - Super Poder: %.2f\n", superPoder2);
+    
+    if (superPoder1 > superPoder2) {
+        printf("Carta 1 é a vencedora geral!\n");
+    } else if (superPoder2 > superPoder1) {
+        printf("Carta 2 é a vencedora geral!\n");
+    } else {
+        printf("As cartas estão empatadas!\n");
+    }
 }
 
 void lerCarta(char *estado, char *codigo, char *cidade, unsigned long int *pop, float *area, float *pib, int *pt, int num) {
