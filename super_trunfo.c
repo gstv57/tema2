@@ -40,6 +40,20 @@ void compararCartas(
     } else {
         printf("As cartas estão empatadas!\n");
     }
+
+
+    printf("\n");
+    printf("Comparação de cartas (Atributo: População):\n");
+    printf("Carta 1 - %s População de %lu\n", estado1, pop1);
+    printf("Carta 2 - %s População de %lu\n", estado2, pop2);
+
+    if(pop1 > pop2) {
+        printf("Resultado: Carta 1 %s venceu! \n", estado1);
+    } else if(pop2 > pop1) {
+        printf("Resultado: Carta 2 %s venceu! \n", estado2);
+    } else {
+        printf("Resultado: Empate! Ambas as cartas têm população de %lu \n", pop1);
+    }
 }
 
 void lerCarta(char *estado, char *codigo, char *cidade, unsigned long int *pop, float *area, float *pib, int *pt, int num) {
