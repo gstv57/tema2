@@ -1,14 +1,15 @@
-A
-A01
 São Paulo
-12325000
+SP01
+São Paulo
+12300000
 1521.11
 699.28
-50
-B
-B02
-Rio de Janeiro
-6748000
-1200.25
-300.50
-30
+45
+Minas Gerais
+MG02
+Belo Horizonte
+2500000
+331.40
+170.50
+35
+5
